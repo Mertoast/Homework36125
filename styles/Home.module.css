@@ -4,19 +4,8 @@
   color: #ffffff;
 }
 
-.header__menu{
-  padding-left: 195px;
-  padding-top: 30px;
-  padding-right: 278px;
-  align-items: center;
-  justify-content: flex-end;
-  display: flex;
-}
 
-.menu__brand {
-  padding-right: 80px;
 
-}
 
 .brandname {
   font-style: normal;
@@ -25,32 +14,6 @@
   letter-spacing: 0.1px;
 }
 
-.navigation__item {
-  padding-right: 21px ;
-
-  font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.2px;
-  }
-
-.authorisation{
-  padding-left: 241px;
-
-}
-
-.authorisation__item{
-  font-size: 14px;
-  line-height: 22px;
-
-  text-align: right;
-  letter-spacing: 0.2px;
-}
-
-.login{
-  padding-right: 70px;
-}
 .header__content{
   flex-wrap: wrap;
   display: flex;

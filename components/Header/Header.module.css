@@ -1,0 +1,36 @@
+.header {
+    padding-left: 195px;
+    padding-top: 30px;
+    padding-right: 278px;
+
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.header__position {}
+
+.header__position-brand {
+    padding-right: 80px;
+}
+
+
+.authorization {
+    padding-left: 241px;
+
+    display: flex;  
+    align-items: center;
+}
+
+.authorization__position {
+    font-size: 14px;
+    line-height: 22px;
+
+    text-align: right;
+    letter-spacing: 0.2px;
+}
+
+
+.login{
+    padding-right: 70px;
+}

@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+import { Header } from '@/components/Header'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -14,51 +16,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main class={styles.page}>
-        <div class={styles.page__header} >
-          <div class={styles.header__menu}>
-            <div class={styles.menu__brand}>
-              <h1 class={styles.brandname}>BrandName</h1>
-            </div>
-          <div class={styles.menu__nav}>
-            <nav class={styles.navigation}>
-              <a class={styles.navigation__item}>Home</a>
-              <a class={styles.navigation__item}>Product</a>
-              <a class={styles.navigation__item}>Pricing</a>
-              <a class={styles.navigation__item}>Contact</a>
-            </nav>
-          </div>
-          <div class={styles.authorisation}>
-            <div class={styles.authorisation__item}>
-              <button class={styles.login}>Login</button>
-              <button class={styles.join}>JOIN US</button>
-            </div>
-          </div>
-          </div>
-          <div class={styles.header__content}>
-            <div class={styles.header__content__text}>
-              <h5 class={styles.tag}>Join Us</h5>
-              <h1 class={styles.title}>A Great Place to <br/> Receive Care</h1>
-              <h4 class={styles.sub__title}>DentalCare is most focused in <br/> helping you discover your most <br/> beauiful smile</h4>
-              <div class={styles.header__content__button}>
-                <button class={styles.sub__join}>Join Us</button>
-                <button class={styles.More}>Learn More</button>
+      <main className={styles.page}>
+        <div className={styles.page__header} >
+          <Header />
+          <div className={styles.header__content}>
+            <div className={styles.header__content__text}>
+              <h5 className={styles.tag}>Join Us</h5>
+              <h1 className={styles.title}>A Great Place to <br /> Receive Care</h1>
+              <h4 className={styles.sub__title}>DentalCare is most focused in <br /> helping you discover your most <br /> beauiful smile</h4>
+              <div className={styles.header__content__button}>
+                <button className={styles.sub__join}>Join Us</button>
+                <button className={styles.More}>Learn More</button>
               </div>
-            <div/>  
-            <div class={styles.header__content__images}>
-              <Image
-                src="/img 3.png"
-                alt="image 3"
-                class={styles.img3}
-                width={212.73}
-                height={212.73}
-                priority
-              />
+              <div />
+              <div className={styles.header__content__images}>
+                <Image
+                  src="/img 3.png"
+                  alt="image 3"
+                  className={styles.img3}
+                  width={212.73}
+                  height={212.73}
+                  priority
+                />
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </main>
     </>
   )
